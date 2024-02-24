@@ -40,44 +40,10 @@ function redirectToDiscord() {
     window.location.href = discordAuthUrl;
 }
 
-
-// Check for access token in the URL after redirection
-const urlParams = new URLSearchParams(window.location.hash.substring(1));
-const accessToken = urlParams.get("access_token");
-
-if (accessToken) {
-    try {
-        // Check if the access token is valid (add your validation logic here)
-        if (isValidAccessToken(accessToken)) {
-            // Store the access token in a cookie
-            setCookie("accessToken", accessToken, 30); // Set cookie to expire in 30 days
-
-            // Redirect to the dashboard
-            window.location.href = "https://www.scyted.tv/dashboard";
-        } else {
-            // Clear the accessToken cookie
-            clearCookie("accessToken");
-
-            // Display an error message
-            displayErrorMessage("Invalid access token");
-        }
-    } catch (error) {
-        // Handle other errors by displaying an error message
-        displayErrorMessage("An error occurred while processing the access token: " + error.message);
-    }
-}
-
 function isValidAccessToken(token) {
     // Add your validation logic here
     // Return true if the token is valid, otherwise return false
     return true; // Placeholder, replace with actual validation
-}
-
-function setCookie(name, value, days) {
-    const date = new Date();
-    date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
-    const expires = "expires=" + date.toUTCString();
-    document.cookie = name + "=" + value + ";" + expires + ";path=/";
 }
 
 function clearCookie(name) {
