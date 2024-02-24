@@ -1,3 +1,5 @@
+const currentURL = window.location.href;
+
 document.addEventListener("DOMContentLoaded", function () {
     // Check if an access token is already stored
     const storedAccessToken = getCookie("accessToken");
@@ -9,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const currentURL = window.location.href;
 
     // Check if the current URL does not contain either redirectUri= or error=
-    if (!currentURL.includes('redirectUri=') && !currentURL.includes('error=invalidResource') && !currentURL.includes('error=invalidLogin') && !currentURL.includes('error=invalidAccess') && !currentURL.includes('error=fetchingUserData')) {
+    if (!currentURL.includes('redirectUri=') && !currentURL.includes('error=invalidResource') && !currentURL.includes('error=invalidLogin') && !currentURL.includes('error=invalidAccess') && !currentURL.includes('error=fetchingUserData') && !currentURL.includes('redirect=')) {
         window.location.href = '?error=invalidResource';
         return; // Stop further execution
     }
