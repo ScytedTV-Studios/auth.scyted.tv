@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const storedAccessToken = getCookie("accessToken");
     if (storedAccessToken) {
         // Redirect to the dashboard
-        window.location.href = "https://www.scyted.tv/dashboard";
+        // window.location.href = "https://www.scyted.tv/dashboard";
     }
 
     const currentURL = window.location.href;
