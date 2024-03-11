@@ -8,7 +8,7 @@ type: dashboard
     .beta-box {
         position: absolute;
         top: calc(50% - 8px);
-        left: calc(50% + 75px);
+        left: calc(50% + 69px);
         transform: translateY(-50%);
         border: 2px solid black;
         border-radius: 5px;
@@ -84,7 +84,7 @@ type: dashboard
 
 <div class="login-container">
     <h3 class="h3-container">
-        <span class="dashboard-text">Dashboard</span>
+        <span class="dashboard-text">Resources</span>
         <span class="beta-box"><span class="beta-label">BETA</span></span>
     </h3>
     <p>Easy access to company assets, account information, and more.</p>
