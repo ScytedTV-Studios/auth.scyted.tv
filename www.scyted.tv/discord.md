@@ -8,7 +8,7 @@ type: dashboard
     .beta-box {
         position: absolute;
         top: calc(50% - 8px);
-        left: calc(50% + 69px);
+        left: calc(50% + 65px);
         transform: translateY(-50%);
         border: 2px solid black;
         border-radius: 5px;
@@ -84,10 +84,10 @@ type: dashboard
 
 <div class="login-container">
     <h3 class="h3-container">
-        <span class="dashboard-text">Resources</span>
+        <span class="dashboard-text">ScytedTV</span>
         <span class="beta-box"><span class="beta-label">BETA</span></span>
     </h3>
-    <p>Easy access to company assets, account information, and more.</p>
+    <p>You are logging into www.scyted.tv with Discord integration.</p>
     <button onclick="redirectToDiscord()" class="discord-button"><img src="https://cdn.scyted.tv/website-assets/dashboard/discord-logo.png" alt="Discord" class="discord-icon" /> Continue with Discord</button>
 </div>
 <div id="error-message" style="color: red;"></div>
