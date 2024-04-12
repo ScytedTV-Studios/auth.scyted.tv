@@ -3,11 +3,12 @@ title: Login
 layout: page
 type: dashboard
 ---
+<div id="fullpage">
 <style>
     .beta-box {
         position: absolute;
         top: calc(50% - 8px);
-        left: calc(50% + 75px);
+        left: calc(50% + 65px);
         transform: translateY(-50%);
         border: 2px solid black;
         border-radius: 5px;
@@ -83,16 +84,18 @@ type: dashboard
 
 <div class="login-container">
     <h3 class="h3-container">
-        <span class="dashboard-text">Dashboard</span>
+        <span class="dashboard-text">ScytedTV</span>
         <span class="beta-box"><span class="beta-label">BETA</span></span>
     </h3>
-    <p>Easy access to company assets, account information, and more.</p>
+    <p>You are authorizing "ScytedTV Studios" with Discord.</p>
     <button onclick="redirectToDiscord()" class="discord-button"><img src="https://cdn.scyted.tv/website-assets/dashboard/discord-logo.png" alt="Discord" class="discord-icon" /> Continue with Discord</button>
-    <div id="error-message" style="color: red;"></div>
 </div>
+<div id="error-message" style="color: red;"></div>
 
 <script src="https://api.scyted.tv/wave-development/dashboard/page-loading-script.js"></script>
-<script src="login-script.js"></script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-LF3ZTHGQHE"></script>
+<script src="dashboard-script.js"></script>
+<script src="error-script.js"></script>
 
 </body>
+</div>
