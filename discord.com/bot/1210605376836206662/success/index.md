@@ -75,10 +75,9 @@ type: dashboard
 
 <div class="login-container">
     <h3 class="h3-container">
-<span class="dashboard-text">ScytedTV Studios</span>
+        <span class="dashboard-text">ScytedTV Studios</span>
     </h3>
-    <p>You are authorizing "ScytedTV Studios" with Discord.</p>
-    <button onclick="redirectToDiscord()" class="discord-button"><img src="https://cdn.scyted.tv/website-assets/dashboard/discord-logo.png" alt="Discord" class="discord-icon" /> Continue with Discord</button>
+    <p>You have successfully authorized "ScytedTV Studios" with Discord. You may now close this page and go back to Discord.</p>
 </div>
 <div id="error-message" style="color: red;"></div>
 
