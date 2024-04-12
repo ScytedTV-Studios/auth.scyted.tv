@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 function redirectToDiscord() {
-    const clientId = '1210605376836206662'; // Replace with your Discord application's client ID
+    const clientId = '1147308835808235581'; // Replace with your Discord application's client ID
     const currentURL = window.location.href;
     
     // Check if the current URL contains a redirect URI parameter
