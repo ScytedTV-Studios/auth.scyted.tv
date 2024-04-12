@@ -33,7 +33,7 @@ function redirectToDiscord() {
     const params = new URLSearchParams(currentURL.split('?')[1]);
     const redirectUri = params.get('redirectUri');
     
-    const scope = 'identify'; // Adjust scopes as needed
+    const scope = 'role_connections.write+identify'; // Adjust scopes as needed
 
     const discordAuthUrl = `https://discord.com/api/oauth2/authorize?client_id=${clientId}&redirect_uri=${redirectUri}&response_type=token&scope=${scope}`;
 
