@@ -84,8 +84,7 @@ type: dashboard
 
 <div class="login-container">
     <h3 class="h3-container">
-        <span class="dashboard-text">ScytedTV</span>
-        <span class="beta-box"><span class="beta-label">BETA</span></span>
+        <span class="dashboard-text">Staff Portal</span>
     </h3>
     <p>You are logging into staff.scyted.tv with Discord integration.</p>
     <button onclick="redirectToDiscord()" class="discord-button"><img src="https://cdn.scyted.tv/website-assets/dashboard/discord-logo.png" alt="Discord" class="discord-icon" /> Continue with Discord</button>
